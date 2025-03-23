@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import Header from "./components/header";
 import { FormGenerator } from "./components/formgenerator";
 
 
@@ -59,6 +60,8 @@ export default function Home() {
 
 
   return (
+    <>
+    <Header/>
     <div className="min-h-screen flex items-center justify-center">
       <FormGenerator
         config={formConfig}
@@ -70,6 +73,7 @@ export default function Home() {
         </button>
       </FormGenerator>
     </div>
+    </>
   )
 
 }
